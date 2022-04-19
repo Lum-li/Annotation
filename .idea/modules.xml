@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/testGit.iml" filepath="$PROJECT_DIR$/.idea/testGit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/annotation.iml" filepath="$PROJECT_DIR$/.idea/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/importTest2/importTest2.iml" filepath="$PROJECT_DIR$/importTest2/importTest2.iml" />
     </modules>
   </component>
 </project>
