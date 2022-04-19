@@ -2,13 +2,19 @@ package com.itheima.bean;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
+import org.springframework.context.annotation.Import;
+//import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.stereotype.Component;
 
 //@Component
 @Data
 //如果用到CartonProperties就生成bean对象
 @EnableConfigurationProperties(CartonProperties.class)
+//@ConditionalOnClass(RedisOperations.class)
+@Import(Test.class)
 public class CartonCatandMouse {
     private  Cat cat;
     private  Mouse mouse;

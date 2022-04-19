@@ -1,6 +1,7 @@
 package com.itheima;
 
 import com.itheima.bean.CartonCatandMouse;
+import com.itheima.bean.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -13,6 +14,18 @@ public class App {
         try (ConfigurableApplicationContext ctx = SpringApplication.run(App.class)) {
             CartonCatandMouse caton = (CartonCatandMouse)ctx.getBean(CartonCatandMouse.class);
             caton.play();
+
+            for (String name : ctx.getBeanDefinitionNames()) {
+                if(name.equals("test")){
+                    Test t = ctx.getBean(Test.class);
+                    System.out.println(name);
+                    t.test();
+                }
+            }
+
+
+
+
         }
     }
 }
