@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 //@Component
 @Data
+//如果用到CartonProperties就生成bean对象
 @EnableConfigurationProperties(CartonProperties.class)
 public class CartonCatandMouse {
     private  Cat cat;
