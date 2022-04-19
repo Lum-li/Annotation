@@ -2,6 +2,6 @@ package com.itheima.bean;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Dog {
 }

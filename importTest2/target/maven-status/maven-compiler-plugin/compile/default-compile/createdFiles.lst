@@ -1,3 +1,9 @@
+com\itheima\bean\Cat.class
+com\itheima\bean\Dog.class
 com\example\importtest2\student\Teacher.class
+com\itheima\bean\MYImportSelector.class
 com\example\importtest2\ImportTest2Application.class
 com\example\importtest2\student\Student.class
+com\itheima\bean\Mouse.class
+com\itheima\Bean.class
+com\itheima\config\SpringConfig.class
