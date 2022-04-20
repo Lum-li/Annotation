@@ -12,10 +12,11 @@ import org.springframework.context.annotation.Import;
 public class App {
     public static void main(String[] args) {
         try (ConfigurableApplicationContext ctx = SpringApplication.run(App.class)) {
-            CartonCatandMouse caton = (CartonCatandMouse)ctx.getBean(CartonCatandMouse.class);
-            caton.play();
+//            CartonCatandMouse caton = (CartonCatandMouse)ctx.getBean(CartonCatandMouse.class);
+//            caton.play();
 
             for (String name : ctx.getBeanDefinitionNames()) {
+//               System.out.println(name);
                 if(name.equals("test")){
                     Test t = ctx.getBean(Test.class);
                     System.out.println(name);

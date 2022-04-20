@@ -1,7 +1,7 @@
 package com.itheima.bean;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.stereotype.Component;
+import cn.itcast.service.ItCountService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 //@ConditionalOnClass(name="import org.springframework.data.redis.core.RedisOperations")
 //@ConditionalOnClass({RedisOperations.class})
@@ -12,4 +12,7 @@ public class Test {
     public void test(){
         System.out.println("test");
     }
+
+    @Autowired
+    private ItCountService itCountService;
 }
