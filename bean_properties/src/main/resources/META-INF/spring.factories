@@ -2,7 +2,7 @@
 #幻境的配置
 #org.springframework.boot.env.EnvironmentPostProcessor=\
 #  com.baomidou.mybatisplus.autoconfigure.SafetyEncryptProcessor
-#此处尚未连接数据库放开报错，这里是自动配置bean对象
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-#  com.itheima.bean.CartonCatandMouse
+#这里是自动配置bean对象,有了这个配置，在启动类APP上面不用导入//@Import(CartonCatandMouse.class)
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.itheima.bean.CartonCatandMouse
 

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 //如果用到CartonProperties就生成bean对象
 @EnableConfigurationProperties(CartonProperties.class)
 //@ConditionalOnClass(RedisOperations.class)
-@Import(Test.class)
+//@Import(Test.class)
 public class CartonCatandMouse {
     private  Cat cat;
     private  Mouse mouse;
